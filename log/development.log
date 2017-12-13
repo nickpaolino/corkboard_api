@@ -1399,3 +1399,166 @@ puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 16:45:55 -0500
   [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by Api::V1::SessionsController#create as */*
+Completed 500 Internal Server Error in 128947ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 16:48:04 -0500
+  
+Processing by Api::V1::SessionsController#create as JSON
+SystemExit (exit):
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/sessions_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 1845ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/sessions_controller.rb:13:in `create'
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 16:48:16 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 60992ms (Views: 0.3ms | ActiveRecord: 9.3ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/sessions_controller.rb:13:in `create'
+Started GET "/api/v1/messages" for 127.0.0.1 at 2017-12-13 16:49:21 -0500
+Processing by Api::V1::MessagesController#index as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 11ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 16:49:25 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 264ms (Views: 4.4ms | ActiveRecord: 14.7ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 16:56:32 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 182ms (Views: 5.2ms | ActiveRecord: 24.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 16:57:34 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 2.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 17:00:27 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 5.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/v1/messages" for 127.0.0.1 at 2017-12-13 17:09:18 -0500
+Processing by Api::V1::MessagesController#index as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 2.7ms)
+
+
+Started GET "/api/v1/messages" for 127.0.0.1 at 2017-12-13 17:23:03 -0500
+Processing by Api::V1::MessagesController#index as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 2.5ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 17:50:51 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 251ms (Views: 3.0ms | ActiveRecord: 29.2ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 17:50:55 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"hello", "password"=>"[FILTERED]", "session"=>{"username"=>"hello", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hello"], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 2.1ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 17:54:10 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"daw", "password"=>"[FILTERED]", "session"=>{"username"=>"daw", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "daw"], ["LIMIT", 1]]
+Completed 200 OK in 21ms (Views: 4.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 17:57:17 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"nick", "password"=>"[FILTERED]", "session"=>{"username"=>"nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "nick"], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 2.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 17:57:22 -0500
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 2.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 18:01:34 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"nick", "password"=>"[FILTERED]", "session"=>{"username"=>"nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "nick"], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 2.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 18:01:39 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 4.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 18:02:02 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"nick", "password"=>"[FILTERED]", "session"=>{"username"=>"nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "nick"], ["LIMIT", 1]]
+Completed 200 OK in 27ms (Views: 3.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/messages" for 127.0.0.1 at 2017-12-13 18:03:29 -0500
+Processing by Api::V1::MessagesController#index as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 18:03:37 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"bucj", "password"=>"[FILTERED]", "session"=>{"username"=>"bucj", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bucj"], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 2.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 18:03:45 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"nick", "password"=>"[FILTERED]", "session"=>{"username"=>"nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "nick"], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 2.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-13 18:03:48 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 2.2ms | ActiveRecord: 1.3ms)
+
+

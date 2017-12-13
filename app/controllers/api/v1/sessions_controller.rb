@@ -9,14 +9,19 @@ class Api::V1::SessionsController < ApplicationController
   end
 
   def create
-    byebug
     user = User.find_by(username: params[:username])
     if user && user.authenticate(params[:password])
       payload = {user_id: user.id}
       token = issue_token(payload)
-      render json: { jwt: token, yay: true }
+      render json: { id: user.id, username: user.username, jwt: token }
     else
       render json: { error: "some bad stuff happened"}
     end
+  end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:username, :password)
   end
 end
