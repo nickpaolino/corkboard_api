@@ -2016,3 +2016,158 @@ Processing by Api::V1::SessionsController#create as */*
 Completed 200 OK in 90ms (Views: 2.6ms | ActiveRecord: 1.2ms)
 
 
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 09:50:20 -0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"nick", "password"=>"[FILTERED]", "session"=>{"username"=>"nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "nick"], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 09:50:23 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 88ms (Views: 0.2ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:04:27 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 122ms (Views: 1.1ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-14 10:04:45 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nicholaspaolino/.rvm/gems/ruby-2.3.5/gems/railties-5.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nicholaspaolino/.rvm/gems/ruby-2.3.5/gems/railties-5.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (7.0ms)
+Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:07:49 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:09:43 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"dwai", "password"=>"[FILTERED]", "session"=>{"username"=>"dwai", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dwai"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:09:47 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:18:15 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 111ms (Views: 0.6ms | ActiveRecord: 20.7ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:18:16 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:25:35 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 91ms (Views: 0.2ms | ActiveRecord: 10.0ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:25:39 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:38:14 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 85ms (Views: 0.3ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 10:47:02 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.2ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 11:01:49 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 0.2ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 11:02:58 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 11:06:35 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 11:06:36 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 11:19:04 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 0.2ms | ActiveRecord: 10.2ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 11:23:25 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 11:28:29 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-14 11:34:41 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nicholaspaolino/.rvm/gems/ruby-2.3.5/gems/railties-5.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nicholaspaolino/.rvm/gems/ruby-2.3.5/gems/railties-5.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 14ms (Views: 9.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-14 11:43:19 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+Completed 200 OK in 110ms (Views: 0.6ms | ActiveRecord: 18.7ms)
+
+

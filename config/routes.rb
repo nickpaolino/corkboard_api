@@ -5,9 +5,9 @@ Rails.application.routes.draw do
       resources :users
 
       post "/auth", to: "sessions#create"
+      get "/current_user", to: "sessions#show"
     end
   end
-  # get "/current_user", to: "sessions#show"
 
   mount ActionCable.server => '/cable'
 end
