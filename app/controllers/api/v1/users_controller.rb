@@ -1,7 +1,11 @@
 class Api::V1::UsersController < ApplicationController
+  skip_before_action :authorized, only: [:create]
+
   def create
-    @user = User.create(user_params)
-    render json: @user.to_json
+    user = User.create(user_params)
+    payload = {user_id: user.id}
+    token = issue_token(payload)
+    render json: { id: user.id, username: user.username, jwt: token }
   end
 
   private

@@ -4197,3 +4197,146 @@ puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.0) lib/puma/server.rb:438:in `process_client'
 puma (3.11.0) lib/puma/server.rb:302:in `block in run'
 puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:07:46 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"Matt", "password"=>"[FILTERED]", "user"=>{"username"=>"Matt"}}
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:09:05 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"Matt", "password"=>"[FILTERED]", "user"=>{"username"=>"Matt"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 5.8ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:09:40 -0500
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"Matt", "password"=>"[FILTERED]", "user"=>{"username"=>"Matt"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 96946ms (ActiveRecord: 7.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/users_controller.rb:6:in `create'
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:11:29 -0500
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"Dylan", "password"=>"[FILTERED]", "user"=>{"username"=>"Dylan"}}
+Completed 500 Internal Server Error in 51186ms (ActiveRecord: 0.0ms)
+
+
+  
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:12:20 -0500
+SystemExit (exit):
+Processing by Api::V1::UsersController#create as JSON
+  
+  Parameters: {"user"=>{"username"=>"Dylan", "password"=>"[FILTERED]"}}
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/users_controller.rb:6:in `create'
+  [1m[35m (208.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (199.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Dylan"], ["password_digest", "$2a$10$MSEuts5Hl7ySAAANETM5FedsSX4lhqzVqa.Fb70uuh7CKy2Jmvs3m"], ["created_at", "2017-12-15 15:12:27.431275"], ["updated_at", "2017-12-15 15:12:27.431275"]]
+  [1m[35m (176.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 8961ms (ActiveRecord: 583.8ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/users_controller.rb:6:in `create'
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:14:49 -0500
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"fields"=>{"username"=>"Matt", "password"=>"[FILTERED]"}, "user"=>{}}
+Completed 400 Bad Request in 6ms (ActiveRecord: 6.8ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users_controller.rb:12:in `user_params'
+app/controllers/api/v1/users_controller.rb:5:in `create'
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:24:54 -0500
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"fields"=>{"username"=>"Josh", "password"=>"[FILTERED]"}, "user"=>{}}
+Completed 400 Bad Request in 6ms
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users_controller.rb:12:in `user_params'
+app/controllers/api/v1/users_controller.rb:5:in `create'
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:25:16 -0500
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Josh", "password"=>"[FILTERED]"}}
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Josh"], ["password_digest", "$2a$10$10dTxqEIlwvP/5jf28TMse/erI.PMBY5yS8B70qPv4Q5ioNxKTR6q"], ["created_at", "2017-12-15 15:25:16.831126"], ["updated_at", "2017-12-15 15:25:16.831126"]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 294ms (Views: 1.8ms | ActiveRecord: 28.4ms)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:29:22 -0500
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"fields"=>{"username"=>"Josh", "password"=>"[FILTERED]"}, "user"=>{}}
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users_controller.rb:12:in `user_params'
+app/controllers/api/v1/users_controller.rb:5:in `create'
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:29:37 -0500
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"fields"=>{"username"=>"Josh", "password"=>"[FILTERED]"}, "user"=>{}}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users_controller.rb:12:in `user_params'
+app/controllers/api/v1/users_controller.rb:5:in `create'
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:51:37 -0500
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"John", "password"=>"[FILTERED]"}}
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "John"], ["password_digest", "$2a$10$fZcHWgpyAzwApx4WI8Pk3e2sFexCCOCtmFjxCrnt/I/lIvXc2IrXu"], ["created_at", "2017-12-15 15:51:37.603305"], ["updated_at", "2017-12-15 15:51:37.603305"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 219ms (Views: 2.1ms | ActiveRecord: 26.6ms)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-15 10:52:19 -0500
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Marvin", "password"=>"[FILTERED]"}}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Marvin"], ["password_digest", "$2a$10$Cz47T/dmo/7FW1VtEhnT4eVQq1i50OFyNW8Mgqqswaq5o8Y0Ea9g2"], ["created_at", "2017-12-15 15:52:20.064868"], ["updated_at", "2017-12-15 15:52:20.064868"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 139ms (Views: 1.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-15 10:52:20 -0500
+Processing by Api::V1::SessionsController#show as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 11ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-15 10:52:25 -0500
+Processing by Api::V1::SessionsController#show as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
