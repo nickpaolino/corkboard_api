@@ -3,10 +3,8 @@ class Api::V1::MessagesController < ApplicationController
   end
 
   def create
-    current_user = User.find(1)
-
     # Create a message entry in Active Record
-    message = current_user.messages.build(message_params)
+    message = Message.create(message_params)
 
     # If the message saves, broadcast to the room channel
     if message.save
@@ -19,6 +17,6 @@ class Api::V1::MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:content)
+    params.require(:message).permit(:content, :user_id, :board_id)
   end
 end
