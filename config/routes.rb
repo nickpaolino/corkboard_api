@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :messages
       resources :users
+      resources :boards
 
       post "/auth", to: "sessions#create"
       get "/current_user", to: "sessions#show"
