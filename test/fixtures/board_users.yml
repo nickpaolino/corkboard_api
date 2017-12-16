@@ -3,7 +3,9 @@
 one:
   user_id: 1
   board_id: 1
+  is_admin: false
 
 two:
   user_id: 1
   board_id: 1
+  is_admin: false

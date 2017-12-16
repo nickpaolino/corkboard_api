@@ -1,4 +1,4 @@
-class BoardsController < ApplicationController
+class Api::V1::BoardsController < ApplicationController
   def create
     board = Board.create(board_params)
     render json: board

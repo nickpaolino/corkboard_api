@@ -7593,3 +7593,877 @@ Migrating to AddIsAdminToBoardUsers (20171216174946)
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(79932649103032635)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/messages" for 127.0.0.1 at 2017-12-16 12:51:59 -0500
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MessagesController#index as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:52:35 -0500
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:285:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:285:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-12-16 12:52:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/boardusers" for 127.0.0.1 at 2017-12-16 12:52:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/boardusers"):
+  
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:52:46 -0500
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:53:40 -0500
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:55:43 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:578:in `check_pending!'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(79932649103032635)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBoardUsers (20171216175520)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.0ms)[0m  [1m[35mCREATE TABLE "board_users" ("id" bigserial primary key, "user_id" integer, "board_id" integer, "is_admin" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(79932649103032635)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (203.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "corkboard-api_development"[0m
+  [1m[35m (196.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "corkboard-api_test"[0m
+  [1m[35m (444.1ms)[0m  [1m[35mCREATE DATABASE "corkboard-api_development" ENCODING = 'unicode'[0m
+  [1m[35m (380.4ms)[0m  [1m[35mCREATE DATABASE "corkboard-api_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  [1m[35m (72.4ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "board_users" CASCADE[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "board_users" ("id" bigserial primary key, "user_id" integer, "board_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "is_admin" boolean)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "boards" CASCADE[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "boards" ("id" bigserial primary key, "subject" character varying, "public" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "messages" CASCADE[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "board_id" integer)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (30.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171216174946)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171213203450),
+(20171213203834),
+(20171213203859),
+(20171215142748),
+(20171215144253);
+
+[0m
+  [1m[35m (18.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-16 17:56:11.029867"], ["updated_at", "2017-12-16 17:56:11.029867"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "board_users" CASCADE[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "board_users" ("id" bigserial primary key, "user_id" integer, "board_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "is_admin" boolean)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "boards" CASCADE[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "boards" ("id" bigserial primary key, "subject" character varying, "public" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "messages" CASCADE[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "board_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (19.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171216174946)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171213203450),
+(20171213203834),
+(20171213203859),
+(20171215142748),
+(20171215144253);
+
+[0m
+  [1m[35m (87.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-16 17:56:11.268744"], ["updated_at", "2017-12-16 17:56:11.268744"]]
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2017-12-16 17:56:11.281245"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(79932649103032635)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBoardUsers (20171216175520)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "board_users" ("id" bigserial primary key, "user_id" integer, "board_id" integer, "is_admin" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(79932649103032635)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (182.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "corkboard-api_development"[0m
+  [1m[35m (166.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "corkboard-api_test"[0m
+  [1m[35m (406.2ms)[0m  [1m[35mCREATE DATABASE "corkboard-api_development" ENCODING = 'unicode'[0m
+  [1m[35m (356.5ms)[0m  [1m[35mCREATE DATABASE "corkboard-api_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(79932649103032635)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActiveStorageTables (20171213203450)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213203450"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20171213203834)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213203834"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMessages (20171213203859)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213203859"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBoards (20171215142748)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "boards" ("id" bigserial primary key, "subject" character varying, "public" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171215142748"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddBoardIdToMessages (20171215144253)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "messages" ADD "board_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171215144253"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIsAdminToBoardUsers (20171216174946)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.4ms)[0m  [1m[35mALTER TABLE "board_users" ADD "is_admin" boolean[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(79932649103032635)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-16 17:57:40.378260"], ["updated_at", "2017-12-16 17:57:40.378260"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (182.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "corkboard-api_development"[0m
+  [1m[35m (188.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "corkboard-api_test"[0m
+  [1m[35m (419.4ms)[0m  [1m[35mCREATE DATABASE "corkboard-api_development" ENCODING = 'unicode'[0m
+  [1m[35m (360.2ms)[0m  [1m[35mCREATE DATABASE "corkboard-api_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(79932649103032635)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActiveStorageTables (20171213203450)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213203450"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20171213203834)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213203834"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMessages (20171213203859)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213203859"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBoards (20171215142748)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "boards" ("id" bigserial primary key, "subject" character varying, "public" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171215142748"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddBoardIdToMessages (20171215144253)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "messages" ADD "board_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171215144253"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBoardUsers (20171216175520)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "board_users" ("id" bigserial primary key, "user_id" integer, "board_id" integer, "is_admin" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171216175520"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-16 17:57:45.697344"], ["updated_at", "2017-12-16 17:57:45.697344"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(79932649103032635)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:57:58 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/board_users"):
+  
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:58:26 -0500
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:285:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:285:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:58:27 -0500
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:58:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/board_users"):
+  
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/board_users" for 127.0.0.1 at 2017-12-16 12:58:44 -0500
+Processing by BoardUsersController#index as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:58:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/board_users"):
+  
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:59:07 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:285:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:285:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:59:09 -0500
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:59:10 -0500
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:59:10 -0500
+  
+LoadError (Unable to autoload constant Api::V1::BoardUsersController, expected /Users/nicholaspaolino/Desktop/Flatiron School/Module_Five/corkboard/corkboard_api/app/controllers/api/v1/board_users_controller.rb to define it):
+  
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+bootsnap (1.1.7) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `const_get'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:298:in `block in constantize'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0.beta2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:573:in `get'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:604:in `constantize'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0.beta2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0.beta2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0.beta2) lib/action_dispatch/routing/route_set.rb:830:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:558:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:59:50 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::BoardUsersController#index as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 12:59:52 -0500
+Processing by Api::V1::BoardUsersController#index as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/board_users" for 127.0.0.1 at 2017-12-16 13:00:14 -0500
+Processing by Api::V1::BoardUsersController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
