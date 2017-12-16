@@ -8,6 +8,11 @@ class Api::V1::UsersController < ApplicationController
     render json: { id: user.id, username: user.username, jwt: token }
   end
 
+  def index
+    users = User.all
+    render json: users
+  end
+
   private
 
   def user_params
