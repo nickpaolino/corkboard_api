@@ -1,6 +1,7 @@
 class BoardsController < ApplicationController
   def create
     board = Board.create(board_params)
+    render json: board
   end
 
   private
