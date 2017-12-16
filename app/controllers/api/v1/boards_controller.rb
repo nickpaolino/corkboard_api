@@ -4,6 +4,11 @@ class Api::V1::BoardsController < ApplicationController
     render json: board
   end
 
+  def index
+    boards = Board.all
+    render json: boards
+  end
+
   private
 
   def board_params
