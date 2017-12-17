@@ -5,12 +5,12 @@ class Api::V1::UsersController < ApplicationController
     user = User.create(user_params)
     payload = {user_id: user.id}
     token = issue_token(payload)
-    render json: { id: user.id, username: user.username, jwt: token }
+    render json: { id: user.id, username: user.username, jwt: token, boards: user.formatted_boards }
   end
 
   def show
     user = User.find(params[:id])
-    render json: user.to_json(:include => {:board_users => {:include => :board}})
+    render json: user
   end
 
   def index
