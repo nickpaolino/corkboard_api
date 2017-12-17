@@ -9,6 +9,11 @@ class Api::V1::BoardsController < ApplicationController
     render json: boards
   end
 
+  def show
+    board = Board.find_by(id: params[:id])
+    render json: board
+  end
+
   private
 
   def board_params
