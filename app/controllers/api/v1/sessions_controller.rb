@@ -4,7 +4,9 @@ class Api::V1::SessionsController < ApplicationController
   def show
     render json: {
       id: current_user.id,
-      username: current_user.username
+      username: current_user.username,
+      boards: current_user.formatted_boards,
+      subjects: Board.all_subjects
     }
   end
 
@@ -13,7 +15,13 @@ class Api::V1::SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       payload = {user_id: user.id}
       token = issue_token(payload)
-      render json: { id: user.id, username: user.username, jwt: token }
+      render json: {
+        id: user.id,
+        username: user.username, 
+        jwt: token,
+        boards: user.formatted_boards,
+        subjects: Board.all_subjects
+    }
     else
       render json: { error: "some bad stuff happened"}
     end

@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
     user = User.create(user_params)
     payload = {user_id: user.id}
     token = issue_token(payload)
-    render json: { id: user.id, username: user.username, jwt: token, boards: user.formatted_boards }
+    render json: { id: user.id, username: user.username, jwt: token }
   end
 
   def show
