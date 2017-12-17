@@ -12932,3 +12932,464 @@ Processing by Api::V1::UsersController#index as */*
 Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:14:23 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.8ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 127ms (Views: 0.3ms | ActiveRecord: 47.3ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:14:23 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:14:39 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.8ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (7.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (11.0ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (5.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 104ms (Views: 0.4ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:14:39 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:15:21 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (5.3ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (4.6ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:15:28 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.6ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:15:28 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:15:31 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.5ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (2.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:15:31 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:15:37 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (8.1ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:15:38 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:15:44 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:15:44 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:15:49 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (1.2ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 40ms (Views: 0.5ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:15:49 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:16:01 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.3ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 120ms (Views: 0.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:16:01 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:16:25 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (6.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (5.6ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:16:25 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:16:58 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (1.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (1.7ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (1.7ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (1.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 191ms (Views: 0.4ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:16:59 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 101ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:17:06 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (6.2ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (66.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 166ms (Views: 0.4ms | ActiveRecord: 90.8ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:17:07 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:17:45 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (1.9ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 77ms (Views: 0.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:17:46 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:17:49 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (5.5ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:17:49 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:18:01 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (13.8ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (2.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 26ms (Views: 0.4ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:18:01 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-17 13:18:16 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Ramy", "password"=>"[FILTERED]", "session"=>{"username"=>"Ramy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ramy"], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.3ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:18:16 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (2.3ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:18:19 -0500
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:18:19 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 17ms (Views: 3.5ms | ActiveRecord: 3.2ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.7ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 41ms (Views: 0.2ms | ActiveRecord: 14.9ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-17 13:18:26 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Ramy", "password"=>"[FILTERED]", "session"=>{"username"=>"Ramy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ramy"], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.3ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 80ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:18:26 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (1.7ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:18:29 -0500
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:18:29 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (2.0ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 14ms (Views: 1.9ms | ActiveRecord: 4.6ms)
+
+
+  [1m[36mBoard Load (1.8ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-17 13:18:40 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Jeremy", "password"=>"[FILTERED]", "session"=>{"username"=>"Jeremy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jeremy"], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 77ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:18:40 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (1.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:18:41 -0500
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:18:41 -0500
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 3.9ms)
+
+
+  [1m[36mBoardUser Load (6.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 9.7ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-17 13:19:53 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 77ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:19:54 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.7ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:19:54 -0500
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:19:54 -0500
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (1.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 4.0ms)
+
+
+  [1m[36mBoard Load (5.7ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (1.0ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:20:06 -0500
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Mark", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Mark"], ["password_digest", "$2a$10$ODnAkpBVY0Y9tMzQekuzi.UB.53hCrboSUA7fMuPZ1VYCNfwd3ht6"], ["created_at", "2017-12-17 18:20:06.805666"], ["updated_at", "2017-12-17 18:20:06.805666"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:20:06 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.6ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:20:10 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:20:10 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mBoardUser Load (2.8ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 5.4ms)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-12-17 13:20:25 -0500
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"username"=>"Nick", "password"=>"[FILTERED]", "session"=>{"username"=>"Nick", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Nick"], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:20:26 -0500
+Processing by Api::V1::SessionsController#show as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (0.4ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/v1/current_user" for 127.0.0.1 at 2017-12-17 13:20:28 -0500
+Processing by Api::V1::SessionsController#show as */*
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-12-17 13:20:28 -0500
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoardUser Load (2.8ms)[0m  [1m[34mSELECT "board_users".* FROM "board_users" WHERE "board_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 12ms (Views: 2.1ms | ActiveRecord: 6.1ms)
+
+
+  [1m[36mBoard Load (2.1ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBoard Load (2.0ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 9.2ms)
+
+
