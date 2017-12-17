@@ -4,6 +4,6 @@ class Board < ApplicationRecord
   has_many :users, through: :board_users
 
   def self.all_subjects
-    self.all.map {|board| board.subject }
+    self.all.map {|board| board.subject }.uniq
   end
 end
