@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :users
       resources :boards
       resources :board_users
+      resources :media
 
       post "/auth", to: "sessions#create"
       get "/current_user", to: "sessions#show"
