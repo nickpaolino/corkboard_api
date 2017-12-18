@@ -11,7 +11,7 @@ class Api::V1::BoardsController < ApplicationController
 
   def show
     board = Board.find_by(id: params[:id])
-    render json: board
+    render json: board.format_board
   end
 
   private
