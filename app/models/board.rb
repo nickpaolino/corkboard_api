@@ -32,4 +32,19 @@ class Board < ApplicationRecord
       messages: self.messages
     }
   end
+
+  def format_messages
+    message_array = []
+
+    self.messages.each do |message|
+      message_hash = {
+        content: message.content,
+        username: message.user.username
+      }
+
+      message_array << message_hash
+    end
+
+    return message_array
+  end
 end

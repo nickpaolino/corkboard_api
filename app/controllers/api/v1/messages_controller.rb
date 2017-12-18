@@ -18,7 +18,7 @@ class Api::V1::MessagesController < ApplicationController
 
   def show
     board = Board.find_by(id: params[:id])
-    messages = board.messages
+    messages = board.format_messages
     render json: messages
   end
 
