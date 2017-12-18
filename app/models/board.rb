@@ -28,19 +28,8 @@ class Board < ApplicationRecord
       subject: self.subject,
       public: self.public,
       users: users_array,
+      media: self.media,
       messages: self.messages
     }
   end
 end
-
-# example response
-# {
-#   id: 1,
-#   subject: "Bitcoin",
-#   public: true,
-#   users: [
-#     {id: 1, username: "Nick", is_admin: true},
-#     {id: 2, username: "Ramy", is_admin: false}
-#   ],
-#   messages: []
-# }
