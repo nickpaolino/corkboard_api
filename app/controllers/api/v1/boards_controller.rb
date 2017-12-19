@@ -12,7 +12,7 @@ class Api::V1::BoardsController < ApplicationController
       user.boards << board
     end
 
-    render json: board
+    render json: board.format_board
   end
 
   def index
