@@ -1,6 +1,17 @@
 class Api::V1::BoardsController < ApplicationController
   def create
     board = Board.create(board_params)
+    usernames = params[:users]
+    users = []
+    usernames.each do |username|
+      user = User.find_by(username: username)
+      users << user
+    end
+
+    users.each do |user|
+      user.boards << board
+    end
+
     render json: board
   end
 
@@ -17,6 +28,6 @@ class Api::V1::BoardsController < ApplicationController
   private
 
   def board_params
-    params.permit(:board).require(:subject, :public)
+    params.require(:board).permit(:subject, :public)
   end
 end
