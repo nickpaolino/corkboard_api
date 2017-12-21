@@ -6,7 +6,7 @@ class Api::V1::MediaController < ApplicationController
 
   def update
     medium = Medium.find_by(id: params[:medium][:id])
-    medium.update(left_position: params[:medium][:left_position], top_position: params[:medium][:top_position])
+    medium.update(left_position: params[:left_position], top_position: params[:top_position])
     render json: medium
   end
 
