@@ -4,9 +4,20 @@ class Api::V1::MediaController < ApplicationController
     render json: medium
   end
 
+  def show
+    board = Board.find_by(id: params[:id])
+    render json: board.media
+  end
+
   def update
     medium = Medium.find_by(id: params[:medium][:id])
     medium.update(left_position: params[:left_position], top_position: params[:top_position])
+    render json: medium
+  end
+
+  def destroy
+    medium = Medium.find_by(id: params[:id])
+    medium.delete
     render json: medium
   end
 
