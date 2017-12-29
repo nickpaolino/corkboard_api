@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       resources :board_users
       resources :media
 
+      match "/media/:id/change", to: "media#change", via: [:get, :patch]
+
       post "/auth", to: "sessions#create"
       get "/current_user", to: "sessions#show"
     end

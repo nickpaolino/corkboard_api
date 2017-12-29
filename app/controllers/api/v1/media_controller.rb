@@ -15,6 +15,12 @@ class Api::V1::MediaController < ApplicationController
     render json: medium
   end
 
+  def change
+    medium = Medium.find_by(id: params[:id])
+    medium.update(caption: params[:caption])
+    render json: medium
+  end
+
   def destroy
     medium = Medium.find_by(id: params[:id])
     medium.delete
