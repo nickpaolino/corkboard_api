@@ -17,7 +17,7 @@ class Api::V1::MediaController < ApplicationController
 
   def change
     medium = Medium.find_by(id: params[:id])
-    medium.update(caption: params[:caption])
+    medium.update(caption: params[:caption], link: params[:link])
     render json: medium
   end
 
