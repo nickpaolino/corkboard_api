@@ -13,6 +13,8 @@ class Board < ApplicationRecord
 
     users_array = []
 
+    board_user_ids = []
+
     self.board_users.each do |board_user|
       user_hash = {
         id: board_user.user.id,
@@ -23,13 +25,18 @@ class Board < ApplicationRecord
       users_array << user_hash
     end
 
+    self.board_users.each do |board_user|
+      board_user_ids << board_user.id
+    end
+
     return {
       id: self.id,
       subject: self.subject,
       public: self.public,
       users: users_array,
       media: self.media,
-      messages: self.messages
+      messages: self.messages,
+      board_users: board_user_ids
     }
   end
 
