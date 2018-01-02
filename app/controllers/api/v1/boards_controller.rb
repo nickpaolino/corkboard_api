@@ -36,6 +36,12 @@ class Api::V1::BoardsController < ApplicationController
     render json: board.format_board
   end
 
+  def destroy
+    board = Board.find_by(id: params[:id])
+    board.delete
+    render json: board
+  end
+
   private
 
   def board_params
