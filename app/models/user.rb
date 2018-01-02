@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  validates :username, presence: true
+  validates :username, uniqueness: true
   has_many :messages
   has_many :media
   has_many :board_users
