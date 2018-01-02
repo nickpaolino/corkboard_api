@@ -25,6 +25,17 @@ class Api::V1::BoardsController < ApplicationController
     render json: board.format_board
   end
 
+  def update
+    board = Board.find_by(id: params[:id])
+    users = params[:users]
+    users.each do |user|
+      user = User.find_by(username: user)
+      board.users << user
+    end
+
+    render json: board.format_board
+  end
+
   private
 
   def board_params
