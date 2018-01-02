@@ -6,7 +6,9 @@ class Api::V1::BoardUsersController < ApplicationController
 
   def update
     board_user = BoardUser.find_by(id: params[:id])
-    board_user.update(left_position: params[:left_position], top_position: params[:top_position])
+    if (board_user.left_position == nil && board_user.top_position == nil)
+      board_user.update(left_position: params[:left_position], top_position: params[:top_position])
+    end
     render json: board_user
   end
 
